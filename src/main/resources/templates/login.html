@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.8/css/bootstrap.min.css}">
+</head>
+<body class="bg-light">
+<div class="container mt-5" layout:fragment="template1">
+    <div class="row">
+        <div class="col col-md-6 offset-3">
+            <div class="card">
+                <div class="card-header few-bold h2">Authentication</div>
+                <div class="card-body">
+                    <form th:action="@{/login}" method="post">
+                        <div class="mb-3">
+                            <label for="username" class="form-label few-bold">Username</label>
+                            <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="Enter username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label few-bold">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" aria-describedby="passwordHelp" placeholder="Enter password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
