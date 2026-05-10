@@ -48,7 +48,7 @@ public class PatientController {
             @RequestParam(name = "page", defaultValue = "0") int page
     ) {
         patientRepository.deleteById(id);
-        return "redirect:/index?page=" + page + "&keyword=" + keyword;
+        return "redirect:/user/index?page=" + page + "&keyword=" + keyword;
     }
 
     @GetMapping("/admin/ajouterPatient")
