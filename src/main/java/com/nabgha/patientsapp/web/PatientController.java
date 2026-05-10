@@ -81,6 +81,7 @@ public class PatientController {
         session.invalidate();
         return "login";
     }
+
     @GetMapping("/notAuthorized")
     public String notAuthorized() {
         return "notAuthorized";
