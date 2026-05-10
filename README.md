@@ -79,4 +79,4 @@ The application uses in-memory authentication for demonstration:
 - `pom.xml`: Project dependencies and configuration.
 
 ---
-Developed by [Nabgha](https://github.com/nabgha)
+Developed by [Nabgha](https://github.com/Abdlatif-nabgha)
